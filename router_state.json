@@ -1,0 +1,34 @@
+{
+  "interface": [
+    {
+      "name": "GigabitEthernet0/0",
+      "description": "Uplink to Core",
+      "type": "iana-if-type:ethernetCsmacd",
+      "enabled": true,
+      "ipv4": {
+        "address": [
+          {
+            "ip": "192.168.1.1",
+            "netmask": "255.255.255.0"
+          }
+        ]
+      },
+      "oper-status": "up"
+    },
+    {
+      "name": "GigabitEthernet0/1",
+      "description": "Link to Access Switch",
+      "type": "iana-if-type:ethernetCsmacd",
+      "enabled": true,
+      "ipv4": {
+        "address": [
+          {
+            "ip": "10.0.0.1",
+            "netmask": "255.255.255.0"
+          }
+        ]
+      },
+      "oper-status": "up"
+    }
+  ]
+}
